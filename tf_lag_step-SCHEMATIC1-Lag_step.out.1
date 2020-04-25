@@ -1,0 +1,250 @@
+
+**** 12/09/19 19:47:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Lag_step"  [ C:\Program Files\Orcad\Files\tf_lag_step-SCHEMATIC1-Lag_step.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tf_lag_step-SCHEMATIC1-Lag_step.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1 0 SKIPBP 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tf_lag_step-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING tf_lag_step-SCHEMATIC1.net ****
+* source TF_LAG_STEP
+X_U2A         N40893 N40209 N40695 N405034 N40209 LM324
+C_C2         N40893 0  10.41u  
+R_R2         N41145 N40987  1k  
+V_V3         N402970 0 -15
+V_V18         N574693 0 15
+R_R1         N40209 N41145  1k  
+R_R5         N40987 N60093  100000k  
+R_R9         N60349 N40393  1k  
+V_V17         N71422 0 -15
+R_R10         N40393 N40893  1k  
+R_R4         0 N40217  1k  
+V_Vin         N52918 0 1
+X_U4A         0 N60093 N574693 N71422 N60260 LM324
+R_R3         N52918 N40217  1k  
+C_C6         N40987 N60093  10u  
+R_R6         N60093 N60260  1900000k  
+C_C1         N40393 N40209  .1667m  
+X_U5A         0 N57694 N575153 N73077 N60349 LM324
+C_C7         N60093 N60260  10u  
+R_R7         N57694 N60349  10k  
+X_U3A         N40217 N41145 N40791 N402970 N40987 LM324
+V_V2         N40791 0 15
+R_R8         N60260 N57694  10k  
+V_V13         N405034 0 -15
+V_V16         N575153 0 15
+V_V14         N40695 0 15
+V_V77         N73077 0 -15
+
+**** RESUMING tf_lag_step-SCHEMATIC1-Lag_step.sim.cir ****
+.END
+
+**** 12/09/19 19:47:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Lag_step"  [ C:\Program Files\Orcad\Files\tf_lag_step-SCHEMATIC1-Lag_step.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.dx        X_U2A.dy        X_U4A.dx        X_U4A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U5A.dx        X_U5A.dy        X_U3A.dx        X_U3A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 12/09/19 19:47:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Lag_step"  [ C:\Program Files\Orcad\Files\tf_lag_step-SCHEMATIC1-Lag_step.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.qx        X_U4A.qx        X_U5A.qx        X_U3A.qx        
+               PNP             PNP             PNP             PNP             
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF  166.7           166.7           166.7           166.7          
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+          CN    2.2             2.2             2.2             2.2          
+           D     .52             .52             .52             .52         
+
+
+**** 12/09/19 19:47:28 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Lag_step"  [ C:\Program Files\Orcad\Files\tf_lag_step-SCHEMATIC1-Lag_step.sim ] 
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.sw2       X_U2A.sw1       X_U2A.sw3       X_U2A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U4A.sw2       X_U4A.sw1       X_U4A.sw3       X_U4A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U5A.sw2       X_U5A.sw1       X_U5A.sw3       X_U5A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U3A.sw2       X_U3A.sw1       X_U3A.sw3       X_U3A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+ERROR -- Convergence problem in transient analysis at Time =  274.2E-06
+         Time step =  992.1E-15, minimum allowable step size =  1.000E-12
+
+  These supply currents failed to converge:
+
+    I(X_U4A.egnd)             =    1.068uA  \    1.067uA
+    I(X_U4A.vc)               =    35.81pA  \    86.37pA
+    I(X_U4A.ve)               =   -9.095pA  \   -65.48pA
+    I(X_U3A.vc)               =    91.51pA  \   145.89pA
+    I(X_U3A.ve)               =   -58.21pA  \  -107.32pA
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N40209)-165.5E-06 (N40217)     .5000 (N40393)     .0012 (N40695)   15.0000     
+
+(N40791)   15.0000 (N40893) 24.03E-06 (N40987)    1.0381 (N41145)     .5190     
+
+(N52918)    1.0000 (N57694)-239.7E-06 (N60093)    -.0195 (N60260)   -1.0770     
+
+(N60349)    1.0761 (N71422)  -15.0000 (N73077)  -15.0000 (N402970)  -15.0000    
+
+(N405034)  -15.0000                   (N574693)   15.0000                       
+
+(N575153)   15.0000                   (X_U2A.6) 22.85E-06                       
+
+(X_U2A.7)    -.0798                   (X_U2A.8)    -.0798                       
+
+(X_U2A.9)    0.0000                   (X_U2A.a)     .0016                       
+
+(X_U2A.b)  -14.9980                   (X_U3A.6)-201.6E-06                       
+
+(X_U3A.7)    1.0589                   (X_U3A.8)    1.0589                       
+
+(X_U3A.9)    0.0000                   (X_U3A.a)   15.0000                       
+
+(X_U3A.b)-417.5E-06                   (X_U4A.6) 203.1E-06                       
+
+(X_U4A.7)   -1.0773                   (X_U4A.8)   -1.0773                       
+
+(X_U4A.9)    0.0000                   (X_U4A.a) 6.106E-06                       
+
+(X_U4A.b)  -15.0000                   (X_U5A.6)-219.8E-06                       
+
+(X_U5A.7)    1.1352                   (X_U5A.8)    1.1352                       
+
+(X_U5A.9)    0.0000                   (X_U5A.a)   14.9990                       
+
+(X_U5A.b)    -.0012                   (X_U2A.10)     .6076                      
+
+(X_U2A.11)  -14.9600                  (X_U2A.12)  -14.9610                      
+
+(X_U2A.13)     .5937                  (X_U2A.14)     .5938                      
+
+(X_U2A.53)   13.5000                  (X_U2A.54)  -14.1780                      
+
+(X_U2A.90)   -1.5929                  (X_U2A.91)   40.0000                      
+
+(X_U2A.92)  -40.0000                  (X_U2A.99)    0.0000                      
+
+(X_U3A.10)    1.1163                  (X_U3A.11)  -14.9700                      
+
+(X_U3A.12)  -14.9510                  (X_U3A.13)    1.1058                      
+
+(X_U3A.14)    1.0992                  (X_U3A.53)   13.5000                      
+
+(X_U3A.54)  -14.1780                  (X_U3A.90)     .4160                      
+
+(X_U3A.91)   40.0000                  (X_U3A.92)  -40.0000                      
+
+(X_U3A.99)    0.0000                  (X_U4A.10)     .5972                      
+
+(X_U4A.11)  -14.9510                  (X_U4A.12)  -14.9700                      
+
+(X_U4A.13)     .5799                  (X_U4A.14)     .5866                      
+
+(X_U4A.53)   13.5000                  (X_U4A.54)  -14.1780                      
+
+(X_U4A.90)    -.0046                  (X_U4A.91)   40.0000                      
+
+(X_U4A.92)  -40.0000                  (X_U4A.99)    0.0000                      
+
+(X_U5A.10)     .6076                  (X_U5A.11)  -14.9600                      
+
+(X_U5A.12)  -14.9600                  (X_U5A.13)     .5936                      
+
+(X_U5A.14)     .5937                  (X_U5A.53)   13.5000                      
+
+(X_U5A.54)  -14.1780                  (X_U5A.90)    1.1825                      
+
+(X_U5A.91)   40.0000                  (X_U5A.92)  -40.0000                      
+
+(X_U5A.99)    0.0000                  
+

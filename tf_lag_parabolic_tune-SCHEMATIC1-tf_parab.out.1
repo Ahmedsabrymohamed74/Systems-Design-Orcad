@@ -1,0 +1,76 @@
+
+**** 12/09/19 21:12:05 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_parab"  [ C:\Program Files\Orcad\Files\tf_lag_parabolic_tune-SCHEMATIC1-tf_parab.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tf_lag_parabolic_tune-SCHEMATIC1-tf_parab.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 10 10
+---------------$
+ERROR -- Invalid value
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tf_lag_parabolic_tune-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING tf_lag_parabolic_tune-SCHEMATIC1.net ****
+* source TF_LAG_PARABOLIC_TUNE
+R_R12         N106294 N41779  1k  
+V_V12         N516303 0 15
+X_U2A         N40893 N40209 N40695 N405034 N40209 LM324
+C_C2         N40893 0  10.41u  
+V_V3         N402970 0 -15
+R_R2         N41145 N40987  1k  
+V_V4         N106294 0  
++PULSE 0 10 0 10 10 1 30
+X_inv_A         0 N51858 N516303 N516304 N51916 LM324
+V_V18         N574693 0 15
+V_V15         N516304 0 -15
+R_R1         N40209 N41145  1k  
+R_R5         N40987 N60093  100000k  
+R_R9         N60349 N40393  1k  
+V_V17         N71422 0 -15
+C_C3         N41779 N41775  500u  
+R_R10         N40393 N40893  1k  
+R_R4         0 N40217  1k  
+X_U4A         0 N60093 N574693 N71422 N60260 LM324
+R_R3         N51916 N40217  1k  
+C_C6         N40987 N60093  10u  
+R_R6         N60093 N60260  1900000k  
+C_C1         N40393 N40209  .1667m  
+R_R11         N41775 N51858  1k  
+X_int_C_A         0 N41779 N418433 N418434 N41775 LM324
+X_U5A         0 N57694 N575153 N73077 N60349 LM324
+C_C7         N60093 N60260  10u  
+R_R7         N57694 N60349  16k  
+V_V161         N418434 0 -15
+X_U3A         N40217 N41145 N40791 N402970 N40987 LM324
+V_V2         N40791 0 15
+R_R13         N51858 N51916  1k  
+R_R8         N60260 N57694  10k  
+V_V171         N418433 0 15
+V_V13         N405034 0 -15
+R_R14         0 N41775  1k  
+V_V16         N575153 0 15
+V_V14         N40695 0 15
+V_V77         N73077 0 -15
+
+**** RESUMING tf_lag_parabolic_tune-SCHEMATIC1-tf_parab.sim.cir ****
+.END
+

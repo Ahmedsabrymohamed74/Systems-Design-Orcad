@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-knsfw"  [ C:\Program Files\Orcad\Files\g(s) -schematic1-knsfw.sim ] 
+
+** Creating circuit file "g(s) -schematic1-knsfw.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000s 0 SKIPBP 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\g(s) -SCHEMATIC1.net" 
+
+
+.END

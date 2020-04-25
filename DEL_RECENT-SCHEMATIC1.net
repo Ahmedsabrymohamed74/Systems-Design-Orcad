@@ -1,0 +1,5 @@
+* source DEL_RECENT
+R_R3         N00579 N00834  1k  
+R_R4         0 N00864  1k  
+V_V2         N00579 0 20Vdc
+C_C2         N00864 N00834  1n  

@@ -1,0 +1,349 @@
+
+**** 12/02/19 22:04:17 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_pid_step"  [ C:\Program Files\Orcad\Files\tf_pid_ramp-SCHEMATIC1-tf_pid_step.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tf_pid_ramp-SCHEMATIC1-tf_pid_step.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10s 0 SKIPBP 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tf_pid_ramp-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING tf_pid_ramp-SCHEMATIC1.net ****
+* source TF_PID_RAMP
+X_U2A         N40807 N40209 N40695 N405034 N40209 LM324
+R_Ri         N40987 N41027  1k  
+X_intA         N41027 0 N40979 N40929 N40269 LM324
+C_C2         N40807 0  10.41u  
+R_R6         N40269 N40213  1k  
+R_Rp1         N40987 N40273  1k  
+V_V3         N402970 0 -15
+R_R2         N41145 N40987  1k  
+V_V11         N405510 0 -15
+V_V10         N40335 0 15
+C_Ci         N41027 N40269  26.85u  
+R_R1         N40209 N41145  1k  
+V_V9         N40401 0 -15
+R_R9         N41015 N40393  1k  
+R_R10         N40393 N40807  1k  
+R_R4         0 N40217  1k  
+R_R3         N08625 N40217  1k  
+X_diffA         N40255 0 N50782 N40401 N40277 LM324
+V_V4         N31051 0 -15
+V_V1         N08625 0  
++PULSE 0 15 0 15 
+C_C1         N40393 N40209  .1667m  
+R_Rd         N40255 N40277  1k  
+R_R7         N40277 N40213  1k  
+X_U7A         N40213 0 N40335 N405510 N41015 LM324
+C_Cd         N40987 N40255  32.3u  
+V_V5         N40531 0 15
+R_Rp2         N40273 N40521  1.862k  
+V_V6         N40979 0 15
+R_R8         N40213 N41015  1k  
+X_U3A         N40217 N41145 N40791 N402970 N40987 LM324
+X_PropA         N40273 0 N31051 N40531 N40521 LM324
+V_V2         N40791 0 15
+V_V13         N405034 0 -15
+V_V8         N50782 0 15
+R_R5         N40521 N40213  1k  
+V_V14         N40695 0 15
+V_V7         N40929 0 -15
+
+**** RESUMING tf_pid_ramp-SCHEMATIC1-tf_pid_step.sim.cir ****
+.END
+
+**** 12/02/19 22:04:17 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_pid_step"  [ C:\Program Files\Orcad\Files\tf_pid_ramp-SCHEMATIC1-tf_pid_step.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.dx        X_U2A.dy        X_intA.dx       X_intA.dy       
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_diffA.dx      X_diffA.dy      X_U7A.dx        X_U7A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U3A.dx        X_U3A.dy        X_PropA.dx      X_PropA.dy      
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 12/02/19 22:04:17 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_pid_step"  [ C:\Program Files\Orcad\Files\tf_pid_ramp-SCHEMATIC1-tf_pid_step.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.qx        X_intA.qx       X_diffA.qx      X_U7A.qx        
+               PNP             PNP             PNP             PNP             
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF  166.7           166.7           166.7           166.7          
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+          CN    2.2             2.2             2.2             2.2          
+           D     .52             .52             .52             .52         
+
+
+               X_U3A.qx        X_PropA.qx      
+               PNP             PNP             
+          IS  800.000000E-18  800.000000E-18 
+          BF  166.7           166.7          
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+          CN    2.2             2.2          
+           D     .52             .52         
+
+
+**** 12/02/19 22:04:17 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_pid_step"  [ C:\Program Files\Orcad\Files\tf_pid_ramp-SCHEMATIC1-tf_pid_step.sim ] 
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.sw2       X_U2A.sw1       X_U2A.sw3       X_U2A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_intA.sw2      X_intA.sw1      X_intA.sw3      X_intA.sw4      
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_diffA.sw2     X_diffA.sw1     X_diffA.sw3     X_diffA.sw4     
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U7A.sw2       X_U7A.sw1       X_U7A.sw3       X_U7A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U3A.sw2       X_U3A.sw1       X_U3A.sw3       X_U3A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_PropA.sw2     X_PropA.sw1     X_PropA.sw3     X_PropA.sw4     
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+ERROR -- Convergence problem in transient analysis at Time =  .045
+         Time step =  5.760E-12, minimum allowable step size =  10.00E-12
+
+  These voltages failed to converge:
+
+    V(N40273)                 =     4.841V  \     4.835V
+    V(X_U2A.11)               =    -14.90V  \    -14.86V
+    V(X_U2A.12)               =    -14.90V  \    -14.86V
+    V(X_intA.90)              =   -3.383mV  \   -3.375mV
+    V(X_U3A.6)                =   -1.537mV  \   -1.514mV
+    V(X_PropA.11)             =   755.03mV  \   753.65mV
+    V(X_PropA.10)             =     2.387V  \     2.348V
+    V(X_PropA.13)             =   760.26mV  \   759.02mV
+
+  These supply currents failed to converge:
+
+    I(V_V13)                  =    6.837mA  \    6.853mA
+    I(X_U2A.vc)               =   -5.408nA  \  -528.89pA
+    I(X_U2A.ve)               =    8.571nA  \   874.00pA
+    I(X_intA.vc)              =  -953.31nA  \  -942.52nA
+    I(X_intA.ve)              =    1.870uA  \    1.849uA
+    I(X_intA.vlim)            =   -3.383uA  \   -3.375uA
+    I(X_diffA.vc)             =   137.38nA  \   138.42nA
+    I(X_U3A.vb)               =   -15.37nA  \   -15.14nA
+    I(X_U3A.vc)               =   -2.760uA  \   296.76nA
+    I(X_U3A.ve)               =    1.645uA  \  -176.79nA
+
+  These devices failed to converge:
+    X_PropA.q1 X_PropA.q2 
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N08625)     .0451 (N31051)  -15.0000 (N40209)   -6.6728 (N40213)   -9.8410     
+
+(N40217)     .0226 (N40255)   -7.0142 (N40269)   -9.0548 (N40273)    4.8414     
+
+(N40277)  -14.9840 (N40335)   15.0000 (N40393)   -9.2279 (N40401)  -15.0000     
+
+(N40521)    -.3390 (N40531)   15.0000 (N40695)   15.0000 (N40791)   15.0000     
+
+(N40807)   -6.6748 (N40929)  -15.0000 (N40979)   15.0000 (N40987)    6.7246     
+
+(N41015)  -14.9860 (N41027)    5.9322 (N41145)     .0259 (N50782)   15.0000     
+
+(N402970)  -15.0000                   (N405034)  -15.0000                       
+
+(N405510)  -15.0000                   (X_U2A.6)     .0013                       
+
+(X_U2A.7)   -6.8475                   (X_U2A.8)   -6.8475                       
+
+(X_U2A.9)    0.0000                   (X_U2A.a)     .0035                       
+
+(X_U2A.b)  -14.9970                   (X_U3A.6)    -.0015                       
+
+(X_U3A.7)    7.5920                   (X_U3A.8)    7.5920                       
+
+(X_U3A.9)    0.0000                   (X_U3A.a)   14.9830                       
+
+(X_U3A.b)    -.0174                   (X_U7A.6)    1.5150                       
+
+(X_U7A.7)  -17.0170                   (X_U7A.8)  -17.0170                       
+
+(X_U7A.9)    0.0000                   (X_U7A.a)     .0406                       
+
+(X_U7A.b)  -14.9590                   (X_intA.6)     .0017                      
+
+(X_intA.7)   -9.0549                  (X_intA.8)   -9.0549                      
+
+(X_intA.9)    0.0000                  (X_intA.a) 4.883E-06                      
+
+(X_intA.b)  -15.0000                  (X_U2A.10)   -6.0649                      
+
+(X_U2A.11)  -14.8970                  (X_U2A.12)  -14.8950                      
+
+(X_U2A.13)   -6.0788                  (X_U2A.14)   -6.0796                      
+
+(X_U2A.53)   13.5000                  (X_U2A.54)  -14.1780                      
+
+(X_U2A.90)   -3.4935                  (X_U2A.91)   40.0000                      
+
+(X_U2A.92)  -40.0000                  (X_U2A.99)    0.0000                      
+
+(X_U3A.10)     .6319                  (X_U3A.11)  -14.9620                      
+
+(X_U3A.12)  -14.9590                  (X_U3A.13)     .6186                      
+
+(X_U3A.14)     .6174                  (X_U3A.53)   13.5000                      
+
+(X_U3A.54)  -14.1780                  (X_U3A.90)   17.3490                      
+
+(X_U3A.91)   40.0000                  (X_U3A.92)  -40.0000                      
+
+(X_U3A.99)    0.0000                  (X_U7A.10)   -9.1989                      
+
+(X_U7A.11)  -15.0010                  (X_U7A.12)  -14.9170                      
+
+(X_U7A.13)   -9.1989                  (X_U7A.14)   -9.2280                      
+
+(X_U7A.53)   13.5000                  (X_U7A.54)  -14.1780                      
+
+(X_U7A.90)  -40.6110                  (X_U7A.91)   40.0000                      
+
+(X_U7A.92)  -40.0000                  (X_U7A.99)    0.0000                      
+
+(X_diffA.6)    1.5101                 (X_diffA.7)  -17.0150                     
+
+(X_diffA.8)  -17.0150                 (X_diffA.9)    0.0000                     
+
+(X_diffA.a)     .0406                 (X_diffA.b)  -14.9590                     
+
+(X_intA.10)     .6395                 (X_intA.11)  -14.9210                     
+
+(X_intA.12)  -15.0000                 (X_intA.13)     .6117                     
+
+(X_intA.14)     .6395                 (X_intA.53)   13.5000                     
+
+(X_intA.54)  -14.1780                 (X_intA.90)    -.0034                     
+
+(X_intA.91)   40.0000                 (X_intA.92)  -40.0000                     
+
+(X_intA.99)    0.0000                 (X_PropA.6)   90.4840                     
+
+(X_PropA.7)   -2.3750                 (X_PropA.8)   -2.3750                     
+
+(X_PropA.9)    0.0000                 (X_PropA.a)     .0407                     
+
+(X_PropA.b)   15.0410                 (X_diffA.10)   -6.3728                    
+
+(X_diffA.11)  -15.0000                (X_diffA.12)  -14.9180                    
+
+(X_diffA.13)   -6.3728                (X_diffA.14)   -6.4016                    
+
+(X_diffA.53)   13.5000                (X_diffA.54)  -14.1780                    
+
+(X_diffA.90)  -40.6110                (X_diffA.91)   40.0000                    
+
+(X_diffA.92)  -40.0000                (X_diffA.99)    0.0000                    
+
+(X_PropA.10)    2.3873                (X_PropA.11)     .7550                    
+
+(X_PropA.12)    5.5591                (X_PropA.13)     .7603                    
+
+(X_PropA.14)    4.0540                (X_PropA.53)  -16.5000                    
+
+(X_PropA.54)   15.8220                (X_PropA.90)  -40.7200                    
+
+(X_PropA.91)   40.0000                (X_PropA.92)  -40.0000                    
+
+(X_PropA.99)    0.0000                
+

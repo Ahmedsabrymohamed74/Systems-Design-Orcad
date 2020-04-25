@@ -1,0 +1,199 @@
+
+**** 12/04/19 13:25:12 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_pid_step"  [ C:\Program Files\Orcad\Files\tf_pid_ramp-schematic1-tf_pid_step.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tf_pid_ramp-schematic1-tf_pid_step.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10s 0 SKIPBP 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tf_pid_ramp-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING tf_pid_ramp-SCHEMATIC1.net ****
+* source TF_PID_RAMP
+X_U2A         N40807 N40209 N40695 N405034 N40209 LM324
+R_Ri         N40987 N41027  1k  
+X_intA         0 N41027 N40929 N40979 N40269 LM324
+C_C2         N40807 0  10.41u  
+R_R6         N40269 N40213  1k  
+V_V3         N402970 0 -15
+R_R2         N41145 N40987  1k  
+V_V11         N405510 0 15
+V_V10         N40335 0 -15
+C_Ci         N41027 N40269  26.85u  
+R_R1         N40209 N41145  1k  
+V_V9         N40401 0 15
+R_R9         N41015 N40393  1k  
+R_R10         N40393 N40807  1k  
+R_R4         0 N40217  1k  
+X_diffA         0 N40255 N40401 N50782 N40277 LM324
+R_R3         N60852 N40217  1k  
+V_V1         N60852 0  
++PULSE 0 15 0 15 
+V_V4         N31051 0 -15
+C_C1         N40393 N40209  .1667m  
+R_Rd         N40255 N40277  1k  
+R_R7         N40277 N40213  1k  
+X_sum_pidA         0 N40213 N405510 N40335 N41015 LM324
+C_Cd         N40987 N40255  32.3u  
+V_V5         N40531 0 15
+R_Rp2         N40315 N40521  1.862k  
+V_V6         N40979 0 -15
+R_R8         N40213 N41015  1k  
+X_U3A         N40217 N41145 N40791 N402970 N40987 LM324
+V_V2         N40791 0 15
+X_PropA         0 N40315 N40531 N31051 N40521 LM324
+R_Rp1         N40987 N40315  1k  
+V_V13         N405034 0 -15
+V_V8         N50782 0 -15
+R_R5         N40521 N40213  1k  
+V_V14         N40695 0 15
+V_V7         N40929 0 15
+
+**** RESUMING tf_pid_ramp-schematic1-tf_pid_step.sim.cir ****
+.END
+
+**** 12/04/19 13:25:12 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_pid_step"  [ C:\Program Files\Orcad\Files\tf_pid_ramp-schematic1-tf_pid_step.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.dx        X_U2A.dy        X_intA.dx       X_intA.dy       
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_diffA.dx      X_diffA.dy      X_sum_pidA.dx   X_sum_pidA.dy   
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U3A.dx        X_U3A.dy        X_PropA.dx      X_PropA.dy      
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 12/04/19 13:25:12 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_pid_step"  [ C:\Program Files\Orcad\Files\tf_pid_ramp-schematic1-tf_pid_step.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.qx        X_intA.qx       X_diffA.qx      X_sum_pidA.qx   
+               PNP             PNP             PNP             PNP             
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF  166.7           166.7           166.7           166.7          
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+          CN    2.2             2.2             2.2             2.2          
+           D     .52             .52             .52             .52         
+
+
+               X_U3A.qx        X_PropA.qx      
+               PNP             PNP             
+          IS  800.000000E-18  800.000000E-18 
+          BF  166.7           166.7          
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+          CN    2.2             2.2          
+           D     .52             .52         
+
+
+**** 12/04/19 13:25:12 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_pid_step"  [ C:\Program Files\Orcad\Files\tf_pid_ramp-schematic1-tf_pid_step.sim ] 
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.sw2       X_U2A.sw1       X_U2A.sw3       X_U2A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_intA.sw2      X_intA.sw1      X_intA.sw3      X_intA.sw4      
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_diffA.sw2     X_diffA.sw1     X_diffA.sw3     X_diffA.sw4     
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_sum_pidA.sw2  X_sum_pidA.sw1  X_sum_pidA.sw3  X_sum_pidA.sw4  
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U3A.sw2       X_U3A.sw1       X_U3A.sw3       X_U3A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_PropA.sw2     X_PropA.sw1     X_PropA.sw3     X_PropA.sw4     
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .22
+

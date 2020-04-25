@@ -1,0 +1,412 @@
+
+**** 12/02/19 17:19:47 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-parabola"  [ C:\Program Files\Orcad\Files\tf_pid_parab-SCHEMATIC1-parabola.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tf_pid_parab-SCHEMATIC1-parabola.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10s 0 SKIPBP 
+.OPTIONS STEPGMIN
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tf_pid_parab-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING tf_pid_parab-SCHEMATIC1.net ****
+* source TF_PID_PARAB
+X_PropA         N06272 0 N31051 N08145 N06285 LM324
+R_R12         N419351 N41779  1k  
+X_intA         N06372 0 N06797 N14067 N06466 LM324
+V_V5         N08145 0 15
+X_diffA         N06703 0 N06825 N06833 N06713 LM324
+R_R10         N09836 N00014  1k  
+C_C1         N09836 N00040  .1667m  
+C_C2         N00014 0  10.41u  
+V_V12         N516304 0 -15
+V_V2         N07970 0 15
+V_V18         N419351 0  
++PULSE 0 1 0 10 10 1 10
+V_V4         N31051 0 -15
+V_V7         N14067 0 -15
+V_V9         N06833 0 -15
+X_U7A         N06879 0 N06829 N065444 N07469 LM324
+V_V11         N065444 0 -15
+V_V6         N06797 0 15
+V_V8         N06825 0 15
+V_V10         N06829 0 15
+X_inv_A         N51825 0 N516303 N516304 N51916 LM324
+V_V15         N516303 0 15
+V_V14         N00576 0 15
+R_R6         N06466 N06879  1k  
+C_C3         N41779 N41775  500u  
+C_Ci         N06372 N06466  26.85u  
+R_R2         N02867 N02862  1k  
+R_R11         N41775 N51825  1k  
+X_int_C_A         0 N41779 N418433 N418434 N41775 LM324
+R_R9         N07469 N09836  1k  
+V_V16         N418434 0 -15
+C_Cd         N02862 N06703  32.3u  
+V_V13         N006784 0 -15
+X_U2A         N00014 N00040 N00576 N006784 N00040 LM324
+R_R13         N51825 N51916  1k  
+R_R1         N00040 N02867  1k  
+R_R3         N51916 N02884  1k  
+R_R4         0 N02884  1k  
+V_V17         N418433 0 15
+X_U3A         N02884 N02867 N07970 N028554 N02862 LM324
+R_R14         0 N41775  1k  
+R_Rp1         N02862 N06272  1k  
+R_Rp2         N06272 N06285  1.862k  
+R_Ri         N02862 N06372  1k  
+R_Rd         N06703 N06713  1k  
+R_R5         N06285 N06879  1k  
+V_V3         N028554 0 -15
+R_R7         N06713 N06879  1k  
+R_R8         N06879 N07469  1k  
+
+**** RESUMING tf_pid_parab-SCHEMATIC1-parabola.sim.cir ****
+.END
+
+**** 12/02/19 17:19:47 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-parabola"  [ C:\Program Files\Orcad\Files\tf_pid_parab-SCHEMATIC1-parabola.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_PropA.dx      X_PropA.dy      X_intA.dx       X_intA.dy       
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_diffA.dx      X_diffA.dy      X_U7A.dx        X_U7A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_inv_A.dx      X_inv_A.dy      X_int_C_A.dx    X_int_C_A.dy    
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U2A.dx        X_U2A.dy        X_U3A.dx        X_U3A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 12/02/19 17:19:47 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-parabola"  [ C:\Program Files\Orcad\Files\tf_pid_parab-SCHEMATIC1-parabola.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_PropA.qx      X_intA.qx       X_diffA.qx      X_U7A.qx        
+               PNP             PNP             PNP             PNP             
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF  166.7           166.7           166.7           166.7          
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+          CN    2.2             2.2             2.2             2.2          
+           D     .52             .52             .52             .52         
+
+
+               X_inv_A.qx      X_int_C_A.qx    X_U2A.qx        X_U3A.qx        
+               PNP             PNP             PNP             PNP             
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF  166.7           166.7           166.7           166.7          
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+          CN    2.2             2.2             2.2             2.2          
+           D     .52             .52             .52             .52         
+
+
+**** 12/02/19 17:19:47 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-parabola"  [ C:\Program Files\Orcad\Files\tf_pid_parab-SCHEMATIC1-parabola.sim ] 
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_PropA.sw2     X_PropA.sw1     X_PropA.sw3     X_PropA.sw4     
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_intA.sw2      X_intA.sw1      X_intA.sw3      X_intA.sw4      
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_diffA.sw2     X_diffA.sw1     X_diffA.sw3     X_diffA.sw4     
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U7A.sw2       X_U7A.sw1       X_U7A.sw3       X_U7A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_inv_A.sw2     X_inv_A.sw1     X_inv_A.sw3     X_inv_A.sw4     
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_int_C_A.sw2   X_int_C_A.sw1   X_int_C_A.sw3   X_int_C_A.sw4   
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U2A.sw2       X_U2A.sw1       X_U2A.sw3       X_U2A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U3A.sw2       X_U3A.sw1       X_U3A.sw3       X_U3A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+WARNING -- Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V18
+WARNING -- Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V18
+ERROR -- Convergence problem in transient analysis at Time =  .209
+         Time step =  3.261E-12, minimum allowable step size =  10.00E-12
+
+  These voltages failed to converge:
+
+    V(X_diffA.11)             =    -15.04V  \    -14.91V
+    V(X_diffA.12)             =    -15.12V  \    -14.99V
+    V(X_U7A.11)               =    -14.17V  \    -16.57V
+    V(X_U7A.12)               =    -14.25V  \    -16.65V
+
+  These supply currents failed to converge:
+
+    I(V_V9)                   =    3.275mA  \    3.325mA
+    I(V_V11)                  =    3.603mA  \    2.698mA
+    I(X_intA.vc)              =    1.570uA  \    1.568uA
+    I(X_intA.ve)              =   -1.014uA  \   -1.012uA
+    I(X_U3A.vc)               =   -3.128nA  \   -3.113nA
+    I(X_U3A.ve)               =    3.091nA  \    3.072nA
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00014)   15.3780 (N00040)   14.3110 (N00576)   15.0000 (N02862)    -.0181     
+
+(N02867)    7.1462 (N02884)    7.1525 (N06272)    1.2521 (N06285)    -.3390     
+
+(N06372)   -8.5354 (N06466)    5.7658 (N06703)   14.2280 (N06713)   14.3120     
+
+(N06797)   15.0000 (N06825)   15.0000 (N06829)   15.0000 (N06833)  -15.0000     
+
+(N06879)    8.5130 (N07469)   14.3130 (N07970)   15.0000 (N08145)   15.0000     
+
+(N09836)   15.3160 (N14067)  -15.0000 (N31051)  -15.0000 (N41775)    -.0047     
+
+(N41779)-187.0E-06 (N51825)    7.1502 (N51916)   14.3050 (N006784)  -15.0000    
+
+(N028554)  -15.0000                   (N065444)  -15.0000                       
+
+(N418433)   15.0000                   (N418434)  -15.0000                       
+
+(N419351)     .0209                   (N516303)   15.0000                       
+
+(N516304)  -15.0000                   (X_U2A.6)   -1.2988                       
+
+(X_U2A.7)   16.3410                   (X_U2A.8)   16.3410                       
+
+(X_U2A.9)    0.0000                   (X_U2A.a)   14.9590                       
+
+(X_U2A.b)    -.0406                   (X_U3A.6) 3.395E-06                       
+
+(X_U3A.7)    -.0182                   (X_U3A.8)    -.0182                       
+
+(X_U3A.9)    0.0000                   (X_U3A.a) 2.546E-06                       
+
+(X_U3A.b)  -15.0000                   (X_U7A.6)   -1.4916                       
+
+(X_U7A.7)   16.3440                   (X_U7A.8)   16.3440                       
+
+(X_U7A.9)    0.0000                   (X_U7A.a)   14.9590                       
+
+(X_U7A.b)    -.0406                   (X_intA.6)-913.2E-06                      
+
+(X_intA.7)    5.2024                  (X_intA.8)    5.2024                      
+
+(X_intA.9)    0.0000                  (X_intA.a)     .0113                      
+
+(X_intA.b)  -14.9890                  (X_U2A.10)   14.9460                      
+
+(X_U2A.11)  -14.9290                  (X_U2A.12)  -15.0030                      
+
+(X_U2A.13)   14.9200                  (X_U2A.14)   14.9460                      
+
+(X_U2A.53)   13.5000                  (X_U2A.54)  -14.1780                      
+
+(X_U2A.90)   40.6060                  (X_U2A.91)   40.0000                      
+
+(X_U2A.92)  -40.0000                  (X_U2A.99)    0.0000                      
+
+(X_U3A.10)    7.7555                  (X_U3A.11)  -14.9590                      
+
+(X_U3A.12)  -14.9650                  (X_U3A.13)    7.7411                      
+
+(X_U3A.14)    7.7432                  (X_U3A.53)   13.5000                      
+
+(X_U3A.54)  -14.1780                  (X_U3A.90)    -.0010                      
+
+(X_U3A.91)   40.0000                  (X_U3A.92)  -40.0000                      
+
+(X_U3A.99)    0.0000                  (X_U7A.10)     .6395                      
+
+(X_U7A.11)  -14.1710                  (X_U7A.12)  -14.2490                      
+
+(X_U7A.13)     .6117                  (X_U7A.14)     .6395                      
+
+(X_U7A.53)   13.5000                  (X_U7A.54)  -14.1780                      
+
+(X_U7A.90)   40.6100                  (X_U7A.91)   40.0000                      
+
+(X_U7A.92)  -40.0000                  (X_U7A.99)    0.0000                      
+
+(X_diffA.6)   -1.4916                 (X_diffA.7)   16.3430                     
+
+(X_diffA.8)   16.3430                 (X_diffA.9)    0.0000                     
+
+(X_diffA.a)   14.9590                 (X_diffA.b)    -.0406                     
+
+(X_intA.10)   -7.8936                 (X_intA.11)  -15.0000                     
+
+(X_intA.12)  -14.9170                 (X_intA.13)   -7.8936                     
+
+(X_intA.14)   -7.9226                 (X_intA.53)   13.5000                     
+
+(X_intA.54)  -14.1780                 (X_intA.90)  -11.2670                     
+
+(X_intA.91)   40.0000                 (X_intA.92)  -40.0000                     
+
+(X_intA.99)    0.0000                 (X_inv_A.6)   -1.4914                     
+
+(X_inv_A.7)   16.3360                 (X_inv_A.8)   16.3360                     
+
+(X_inv_A.9)    0.0000                 (X_inv_A.a)   14.9590                     
+
+(X_inv_A.b)    -.0406                 (X_PropA.6)   23.4370                     
+
+(X_PropA.7)   -2.3732                 (X_PropA.8)   -2.3732                     
+
+(X_PropA.9)    0.0000                 (X_PropA.a)     .0407                     
+
+(X_PropA.b)   15.0410                 (X_diffA.10)     .6395                    
+
+(X_diffA.11)  -15.0400                (X_diffA.12)  -15.1200                    
+
+(X_diffA.13)     .6117                (X_diffA.14)     .6395                    
+
+(X_diffA.53)   13.5000                (X_diffA.54)  -14.1780                    
+
+(X_diffA.90)   40.6100                (X_diffA.91)   40.0000                    
+
+(X_diffA.92)  -40.0000                (X_diffA.99)    0.0000                    
+
+(X_inv_A.10)     .6395                (X_inv_A.11)  -14.9210                    
+
+(X_inv_A.12)  -15.0000                (X_inv_A.13)     .6117                    
+
+(X_inv_A.14)     .6395                (X_inv_A.53)   13.5000                    
+
+(X_inv_A.54)  -14.1780                (X_inv_A.90)   40.6110                    
+
+(X_inv_A.91)   40.0000                (X_inv_A.92)  -40.0000                    
+
+(X_inv_A.99)    0.0000                (X_PropA.10)    1.3833                    
+
+(X_PropA.11)     .7489                (X_PropA.12)    1.9918                    
+
+(X_PropA.13)     .7515                (X_PropA.14)    1.9873                    
+
+(X_PropA.53)  -16.5000                (X_PropA.54)   15.8220                    
+
+(X_PropA.90)  -40.6850                (X_PropA.91)   40.0000                    
+
+(X_PropA.92)  -40.0000                (X_PropA.99)    0.0000                    
+
+(X_int_C_A.6) 103.7E-06               (X_int_C_A.7)    -.3637                   
+
+(X_int_C_A.8)    -.3637               (X_int_C_A.9)    0.0000                   
+
+(X_int_C_A.a)     .0072               (X_int_C_A.b)  -14.9930                   
+
+(X_int_C_A.10)     .6076              (X_int_C_A.11)  -14.9600                  
+
+(X_int_C_A.12)  -14.9600              (X_int_C_A.13)     .5937                  
+
+(X_int_C_A.14)     .5937              (X_int_C_A.53)   13.5000                  
+
+(X_int_C_A.54)  -14.1780              (X_int_C_A.90)   -7.1807                  
+
+(X_int_C_A.91)   40.0000              (X_int_C_A.92)  -40.0000                  
+
+(X_int_C_A.99)    0.0000              
+

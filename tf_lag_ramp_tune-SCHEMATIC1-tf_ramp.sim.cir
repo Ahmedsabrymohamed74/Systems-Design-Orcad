@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-tf_ramp"  [ C:\Program Files\Orcad\Files\tf_lag_ramp_tune-SCHEMATIC1-tf_ramp.sim ] 
+
+** Creating circuit file "tf_lag_ramp_tune-SCHEMATIC1-tf_ramp.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1s 0 SKIPBP 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tf_lag_ramp_tune-SCHEMATIC1.net" 
+
+
+.END

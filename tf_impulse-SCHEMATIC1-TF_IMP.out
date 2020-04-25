@@ -1,0 +1,126 @@
+
+**** 12/07/19 09:50:27 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TF_IMP"  [ C:\Program Files\Orcad\Files\tf_impulse-SCHEMATIC1-TF_IMP.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tf_impulse-SCHEMATIC1-TF_IMP.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1s 0 SKIPBP 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tf_impulse-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING tf_impulse-SCHEMATIC1.net ****
+* source TF_IMPULSE
+X_U2A         N40893 N40209 N40695 N405034 N40209 LM324
+C_C2         N40893 0  10.41u  
+V_V3         N402970 0 -15
+R_R2         N41145 N40987  1k  
+R_R1         N40209 N41145  1k  
+V_V4         N58135 0  
++PULSE 0 10 0 .001 .001 .1 30
+R_R9         N40987 N40393  1k  
+R_R10         N40393 N40893  1k  
+R_R4         0 N40217  1k  
+R_R3         N58135 N40217  1k  
+C_C1         N40393 N40209  .1667m  
+X_U3A         N40217 N41145 N40791 N402970 N40987 LM324
+V_V2         N40791 0 15
+V_V13         N405034 0 -15
+V_V14         N40695 0 15
+
+**** RESUMING tf_impulse-SCHEMATIC1-TF_IMP.sim.cir ****
+.END
+
+**** 12/07/19 09:50:27 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TF_IMP"  [ C:\Program Files\Orcad\Files\tf_impulse-SCHEMATIC1-TF_IMP.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.dx        X_U2A.dy        X_U3A.dx        X_U3A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 12/07/19 09:50:27 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TF_IMP"  [ C:\Program Files\Orcad\Files\tf_impulse-SCHEMATIC1-TF_IMP.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.qx        X_U3A.qx        
+               PNP             PNP             
+          IS  800.000000E-18  800.000000E-18 
+          BF  166.7           166.7          
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+          CN    2.2             2.2          
+           D     .52             .52         
+
+
+**** 12/07/19 09:50:27 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TF_IMP"  [ C:\Program Files\Orcad\Files\tf_impulse-SCHEMATIC1-TF_IMP.sim ] 
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.sw2       X_U2A.sw1       X_U2A.sw3       X_U2A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U3A.sw2       X_U3A.sw1       X_U3A.sw3       X_U3A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .19
+

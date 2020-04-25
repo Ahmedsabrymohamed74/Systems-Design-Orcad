@@ -1,0 +1,158 @@
+
+**** 12/09/19 20:52:37 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_ramp"  [ C:\Program Files\Orcad\Files\tf_lag_ramp_tune-SCHEMATIC1-tf_ramp.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tf_lag_ramp_tune-SCHEMATIC1-tf_ramp.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1s 0 SKIPBP 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\tf_lag_ramp_tune-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING tf_lag_ramp_tune-SCHEMATIC1.net ****
+* source TF_LAG_RAMP_TUNE
+X_U2A         N40893 N40209 N40695 N405034 N40209 LM324
+C_C2         N40893 0  10.41u  
+V_V3         N402970 0 -15
+R_R2         N41145 N40987  1k  
+V_V4         N52918 0  
++PULSE 0 10 0 10 10 1 30
+V_V18         N574693 0 15
+R_R1         N40209 N41145  1k  
+R_R5         N40987 N60093  100000k  
+R_R9         N60349 N40393  1k  
+V_V17         N71422 0 -15
+R_R10         N40393 N40893  1k  
+R_R4         0 N40217  1k  
+X_U4A         0 N60093 N574693 N71422 N60260 LM324
+R_R3         N52918 N40217  1k  
+C_C6         N40987 N60093  10u  
+R_R6         N60093 N60260  1900000k  
+C_C1         N40393 N40209  .1667m  
+X_U5A         0 N57694 N575153 N73077 N60349 LM324
+C_C7         N60093 N60260  10u  
+R_R7         N57694 N60349  16k  
+X_U3A         N40217 N41145 N40791 N402970 N40987 LM324
+V_V2         N40791 0 15
+R_R8         N60260 N57694  10k  
+V_V13         N405034 0 -15
+V_V16         N575153 0 15
+V_V14         N40695 0 15
+V_V77         N73077 0 -15
+
+**** RESUMING tf_lag_ramp_tune-SCHEMATIC1-tf_ramp.sim.cir ****
+.END
+
+**** 12/09/19 20:52:37 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_ramp"  [ C:\Program Files\Orcad\Files\tf_lag_ramp_tune-SCHEMATIC1-tf_ramp.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.dx        X_U2A.dy        X_U4A.dx        X_U4A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U5A.dx        X_U5A.dy        X_U3A.dx        X_U3A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 12/09/19 20:52:37 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_ramp"  [ C:\Program Files\Orcad\Files\tf_lag_ramp_tune-SCHEMATIC1-tf_ramp.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.qx        X_U4A.qx        X_U5A.qx        X_U3A.qx        
+               PNP             PNP             PNP             PNP             
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF  166.7           166.7           166.7           166.7          
+          NF    1               1               1               1            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+          CN    2.2             2.2             2.2             2.2          
+           D     .52             .52             .52             .52         
+
+
+**** 12/09/19 20:52:37 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-tf_ramp"  [ C:\Program Files\Orcad\Files\tf_lag_ramp_tune-SCHEMATIC1-tf_ramp.sim ] 
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.sw2       X_U2A.sw1       X_U2A.sw3       X_U2A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U4A.sw2       X_U4A.sw1       X_U4A.sw3       X_U4A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U5A.sw2       X_U5A.sw1       X_U5A.sw3       X_U5A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U3A.sw2       X_U3A.sw1       X_U3A.sw3       X_U3A.sw4       
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .08
+
